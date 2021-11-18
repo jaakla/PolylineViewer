@@ -132,7 +132,7 @@ var polylineViewer = {
       routeLine = L.polyline(
           coordinates,
           {
-              color: encoded.color,
+              color: 'blue', // encoded.color,
               weight: 2,
               opacity: .7,
               lineJoin: 'round'
