@@ -60,6 +60,9 @@ var polylineViewer = {
       if (!selectedId){ // fine, be that way
         selectedId = worksheetData.columns.find(column => polylineViewer.nameContains(column.fieldName,"polyline"));
       }
+      
+      var colorField = worksheetData.columns.find(column => polylineViewer.nameContains(column.fieldName,"color"));        
+     
 
       polylineViewer.log("polyline field is " + field.index);
       polylineViewer.log(field);
@@ -69,7 +72,7 @@ var polylineViewer = {
           polylineViewer.log("Too many values selected");
           continue;
         }
-        sheetData.push({id: row[selectedId.index].value, polyline: row[field.index].value});
+        sheetData.push({id: row[selectedId.index].value, polyline: row[field.index].value, color: colorField});
       }
       polylineViewer.log(sheetData[0]);
 
@@ -129,7 +132,7 @@ var polylineViewer = {
       routeLine = L.polyline(
           coordinates,
           {
-              color: 'red',
+              color: encoded.color,
               weight: 2,
               opacity: .7,
               lineJoin: 'round'
