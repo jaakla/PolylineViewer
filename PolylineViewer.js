@@ -72,7 +72,7 @@ var polylineViewer = {
           polylineViewer.log("Too many values selected");
           continue;
         }
-        sheetData.push({id: row[selectedId.index].value, polyline: row[field.index].value, color: colorField});
+        sheetData.push({id: row[selectedId.index].value, polyline: row[field.index].value, color: row[colorField.index].value});
       }
       polylineViewer.log(sheetData[0]);
 
@@ -132,7 +132,7 @@ var polylineViewer = {
       routeLine = L.polyline(
           coordinates,
           {
-              color: 'red', // encoded.color,
+              color: encoded.color,
               weight: 2,
               opacity: .7,
               lineJoin: 'round'
