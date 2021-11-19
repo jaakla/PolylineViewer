@@ -4,8 +4,8 @@
 Tableau extensions are web applications that can interact and communicate with Tableau. This application lets you visualize an encoded polyline from your data.
 
 Requirements
-- you must have Tableau Desktop 2018.2 to use extensions. 
-- Works on server also - needs to whitelist extension URL by admin
+- you must have Tableau Desktop 2018.2 or later to use extensions. (tested with 2020.3)
+- Works on server also, just needs to whitelist extension URL by admin
 - must be online to run this extension
 
 Usage:
