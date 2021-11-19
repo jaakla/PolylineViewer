@@ -4,10 +4,10 @@
     <default-locale>en_US</default-locale>
     <name resource-id="Polyline Viewer"/>
     <description>Take a polyline value and render it as a path on a map</description>
-    <author name="Jac Fitzgerald" email="jfitzgerald@tableau.com" organization="tableau" website="https://www.tableau.com"/>
+    <author name="Jaak Laineste" email="jaak@sixfold.com" organization="sixfold" website="https://www.sixfold.com"/>
     <min-api-version>1.0</min-api-version>
     <source-location>
-       <url>https://jacalata.github.io/PolylineViewer/PolylineViewer.html</url>
+       <url>https://jaakla.github.io/PolylineViewer/PolylineViewer.html</url>
     <!-- <url>http://localhost:8765/PolylineViewer/PolylineViewer.html</url>
      -->
     </source-location>
